@@ -7,15 +7,9 @@
     <title>TODO App</title>
     <link rel="icon" type="image/png" href="./assets/rocket.svg" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans&family=Parisienne&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans&family=Parisienne&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="./css/styles.css" rel="stylesheet" />
   </head>
   <body>
     <main>
@@ -31,6 +25,7 @@
               autocomplete="off"
               data-form-input
             />
+            <input type="datetime-local" data-form-date placeholder="YYYY/MM/DD" class="inputDate">
             <button type="submit" class="btnCreate" data-form-btn>
               Agregar <i class="fas fa-plus-circle"></i>
             </button>
@@ -40,6 +35,11 @@
         </ul>
       </div>
     </main>
-    <script type="module" src="script.js"></script>
+    <footer>
+      <p>Developed by: <a href="https://github.com/jcardonamde" target="_blank"> Jonathan Cardona</a> &copy;</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
+    <script type="module" src="./js/script.js"></script>
   </body>
 </html>

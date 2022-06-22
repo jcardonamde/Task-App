@@ -1,0 +1,272 @@
+* {
+  font-family: 'Dosis', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(62, 161, 219, 1) 11.2%,
+    rgba(93, 52, 236, 1) 100.2%
+  );
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
+form {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.mainCard {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 25px;
+  width: 40vw;
+}
+
+.title {
+  align-content: center;
+  display: flex;
+  font-family: 'Dosis', sans-serif;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.inputForm {
+  border: none;
+  border: 1px solid #eee;
+  outline: none;
+  padding: 10px;
+  width: 35%;
+}
+
+.inputForm::placeholder {
+  padding: 0px;
+}
+
+.btnCreate {
+  
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(62, 161, 219, 1) 11.2%,
+    rgba(93, 52, 236, 1) 100.2%
+  );
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+.cardsList {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  justify-content: flex-start;
+  max-height: 60vh;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.card {
+  align-content: center;
+  box-shadow: 2px 4px 4px 4px rgba(71, 71, 71, 0.16);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px 0px;
+  padding: 15px;
+  position: relative;
+  width: 90%;
+}
+
+.task {
+  padding: 10px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: rgba(62, 161, 219, 1);
+}
+
+.completeIcon {
+  color: rgba(62, 161, 219, 1);
+}
+
+.trashIcon:hover {
+  color: #f00;
+}
+
+.deleteConfirmationPop {
+  background-color: rgba(255, 255, 255);
+  width: 100%;
+  z-index: 99;
+  position: relative;
+  top: -100px;
+  left: 0;
+}
+
+.deleteSpace {
+  position: relative;
+  width: 30%;
+}
+
+.noTasks {
+  font-size: 48px;
+}
+
+.date {
+  padding: 15px;
+  width: 100%;
+}
+
+footer {
+  background-color: #000000;
+  color: yellow;
+  height: 20px;
+  padding: 15px;
+  text-align: center;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 17px;
+  width: 100%;
+}
+
+
+/* Uso de Media Queries para Tablets y Moviles*/
+@media screen and (max-width: 1024px) {
+  body {
+    background-image: linear-gradient(
+      109.6deg,
+    rgba(62, 161, 219, 1) 11.2%,
+    rgba(93, 52, 236, 1) 100.2%
+    );
+  }
+
+  main {
+    margin: 75px 0px 75px 0px;
+    width: 100%;
+  }
+
+  .mainCard {
+    border: 1px solid rgb(62, 161, 219);
+    border-radius: 10px;
+  }
+
+  .title {
+    margin-top: 10px;
+  }
+
+  Form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .inputForm {
+    border: 2px solid #FFC669;
+    border-radius: 10px;
+    margin: 10px 10px;
+    width: 90%;
+  }
+
+  .inputDate {
+    border: 2px solid #FFC669;
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 10px;
+    width: 50%;
+  }
+
+  .btnCreate {
+    margin: 10px 10px;
+    padding: 10px;
+    width: 50%;
+  }
+}
+
+
+@media screen and (max-width:712px) {
+  body {
+    background-image: linear-gradient(
+      109.6deg,
+    rgba(62, 161, 219, 1) 11.2%,
+    rgba(93, 52, 236, 1) 100.2%
+    );
+  }
+
+  .mainCard {
+    width: 70%;
+  }
+
+  .title {
+    margin-top: 5px;
+  }
+
+  .inputForm {
+    border: 2px solid #FFC669;
+    border-radius: 10px;
+    margin: 10px 10px;
+  }
+
+  .inputDate {
+    border: 2px solid #FFC669;
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 10px;
+  }
+}
+
+
+
+@media screen and (max-width:480px) {
+  body {
+    background-image: linear-gradient(
+      109.6deg,
+    rgba(62, 161, 219, 1) 11.2%,
+    rgba(93, 52, 236, 1) 100.2%
+    );
+  }
+
+  .mainCard {
+    width: 70%;
+  }
+
+  .title {
+    margin-top: 5px;
+  }
+
+  .inputForm {
+    border: 2px solid #FFC669;
+    border-radius: 10px;
+    margin: 10px 10px;
+  }
+
+  .inputDate {
+    border: 2px solid #FFC669;
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 10px;
+  }
+}
+
+
+
+
